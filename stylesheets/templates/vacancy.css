@@ -1,0 +1,262 @@
+.vacBox{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 80%;
+	border-radius: 10px;
+	background-color: #bfbfbf;
+	border: 2px solid #b21000;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+
+.headVac{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+.headVac img{
+	width: 80px;
+	height: 80px;
+	border-radius: 25%;
+	margin-right: 20px;
+}
+
+
+.headVac .titleLink:link{
+	display: inline-block;
+	text-decoration: none;
+	color: #0040ff;
+	flex: 1;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.headVac .titleLink:visited{
+	color: #0040ff;
+}
+
+.headVac  .titleLink:hover{
+	text-decoration: underline;
+}
+
+
+
+
+ .edit{
+	background-image: url('../../images/edit2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	align-self: end;
+}
+
+.edit:hover{
+	background-color: #1464e6;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.editBox{
+	display: none;
+	flex-flow: column nowrap;
+	position: relative;
+	left: -75px;
+  	top: 25px;
+	width: 100px;
+	background-color: #0040ff;
+	border-radius: 5px;
+	border: 1px solid #141e82;
+  	box-shadow: -2px -2px 2px 0px rgba(255, 255, 255, 0.25), inset -2px -2px 2px 0px rgba(255, 255, 255, 0.25);
+ 
+}
+
+ .editBox button{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	padding-left: 20px;
+	width: 100%;
+	border: none;
+	background-color: #0040ff;
+	font-size: 18px;
+}
+
+
+.editBox button:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+.titleVac{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.titleVac h2{
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	text-align: center;
+}
+
+.titleVac span{
+	width: 50%;
+	text-align: center;
+}
+
+
+
+.infoTitle{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.readMoreLink:link{
+	align-self: center;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.readMoreLink:visited{
+	color: white;
+}
+
+.readMoreLink:hover{
+	text-decoration: underline;
+}
+
+.readMore{
+	display: none;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+.info{
+	width: 100%;
+	display: block;
+	margin-top: 20px;
+	background-color: #252a33;
+	border: 1px solid #001a66;
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+.applied{
+	flex:1;
+	background-color: #0040ff;
+	text-align: center;
+	margin-top: 20px;
+	width: 400px;
+	font-size: 25px;
+	padding: 15px;
+	box-sizing: border-box;
+	align-self: center;
+}
+
+.apply:link{
+	align-self: center;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	background-color: #0040ff;
+	margin: 0;
+	border: none;
+	color: white;
+	font-size: 17px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 22px;
+	margin-top: 20px;
+}
+
+.applied:link{
+	align-self: center;
+	width: 90%;
+	height: 50px;
+	box-sizing: border-box;
+	background-color: #0040ff;
+	margin: 0;
+	border: none;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.apply:visited, .applied:visited{
+	color: white;
+}
+
+.apply:hover, .applied:hover{
+	opacity: 0.8;
+}
+
+
+.warning{
+	display: block;
+	width: 100%;
+	height: 40px;
+	border: 2px solid darkred;
+	background-color: red;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.success{
+	display: block;
+	width: 100%;
+	height: 40px;
+	border: 2px solid darkgreen;
+	background-color: limegreen;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 10px 0;
+	text-align: center;
+}
+
+@media screen and (max-width:600px) {
+	.headVac .titleLink:link{
+		font-size: 15px;
+	}
+
+	.success{
+		height: 60px;
+	}
+
+	.applied:link{
+	width: 100%;
+	font-size: 15px;
+	}
+
+
+

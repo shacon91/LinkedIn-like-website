@@ -1,0 +1,192 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	background: linear-gradient(black, #4166a0);
+	overflow: scroll;
+	color: white;
+
+}
+
+header{
+	display: block;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	font-size: 50px;
+	background-color: #b21000;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.sec{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 60%;
+	background-color: lightslategrey;
+	padding: 50px;
+	padding-top: 20px;
+	border: 2px solid #b21000;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+
+
+ .skillSec{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;	
+	width: 100%;
+	font-size: 25px;
+}
+
+ .skillSec span{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #252a33;
+	margin: 10px;
+	padding: 10px;
+	width: 40%;
+}
+
+.skillSec span label{
+	display: inline-block;
+	width: 75%;
+}
+
+input[type="checkbox"]{
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+textarea{
+	width: 100%;
+	height: 150px;
+	background-color: #bfbfbf;
+	border: 1px solid #b21000;
+	padding: 10px;
+	color: white;
+	font-size: 17px;
+}
+
+
+img{
+	width: 300px;
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+
+
+
+button,label[for="file"],input[type="submit"]{
+	width: 200px;
+	height: 50px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: #b21000;
+	margin: 0;
+	margin-bottom: 30px;
+	border: none;
+	color: white;
+	font-size: 25px;
+}
+
+
+label[for="file"]{
+	line-height: 40px;
+	text-align: center;
+}
+
+button:hover, label[for="file"]:hover,input[type="submit"]:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.warning{
+	display: block;
+	width: 100%;
+	height: 40px;
+	border: 2px solid darkred;
+	background-color: red;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.sec .info{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.sec .info label{
+	margin-right: 30px;
+}
+
+input[type="text"],input[type="number"]{
+	width: 250px;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: #bfbfbf;
+	margin: 0;
+	border: 1px solid #b21000;
+	color: white;
+	font-size: 17px;
+}
+input[type="number"]{
+	width:80px;
+}
+
+select{
+	margin-right: 15px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+@media screen and (max-width:600px) {
+	.skillSec span{
+		width: 100%;
+	}
+
+	 input[type="text"]{
+		width: 150px;
+	}
+	input[type="number"]{
+		width: 70px;
+	}
+}

@@ -1,0 +1,280 @@
+header{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #b21000;
+	color: white;
+	z-index: 2;
+}
+header img{
+	margin: 5px;
+	width: 60px;
+	height: 40px;
+	border-radius: 10px;
+}
+
+header h1{
+	display: flex;
+	flex: 2;
+	margin: 0;
+	font-size: 35px;
+	line-height: 50px;
+	letter-spacing: 2px;
+	justify-content: flex-start;
+}
+
+.search{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex: 5;
+	margin-top: 10px;
+}
+
+#search{
+	display: inline-block;
+	position: relative;
+	height: 30px;
+	width: 350px;
+	padding: 5px 10px;
+	color: white;
+	font-size: 17px;
+	box-sizing: border-box;
+	border: 1px solid #001a66;
+	border-radius: 5px;
+	background-color: #002db3;
+	z-index: 5;
+}
+
+
+
+ #searchBox{
+	display: none;
+	position: relative;
+	
+	width: 350px; 
+	background: linear-gradient(black, #030738);
+	z-index: 4;
+	border-radius: 0 0 10px 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	overflow: scroll;
+}
+
+#searchBox .searchLink:link{
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #0040ff;
+	margin-bottom: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+}
+#searchBox .searchLink:visited{
+	color: white;
+}
+#searchBox .searchLink:hover{
+	opacity: 0.8;
+}
+
+header ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+header ::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+header :-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+header :-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+header .rightLinks:link{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	height: 50px;
+	line-height: 50px;
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+}
+
+header .rightLinks:visited{
+	color: white;
+}
+
+header .rightLinks:hover{
+	background-color: #002db3;
+	opacity: 0.9;
+}
+
+.rightLinks img{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	margin: 5px 0;
+	margin-right: 10px;
+}
+
+#settings, #mobile{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 60px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	font-size: 22px;
+}
+
+#mobile{
+	display: none;
+}
+
+#settings span,#mobile span{
+	display: none;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	right: 70px;
+	width: 200px; 
+	background: linear-gradient(black, #030738);
+	z-index: 4;
+	border-radius: 0 0 10px 10px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+#settings .settingsLink:link,#mobile .settingsLink:link{
+	display: block;
+	color: white;
+	text-decoration: none;
+	min-height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#settings .settingsLink:visited,#mobile .settingsLink:visited{
+	color: white;
+}
+
+#settings .settingsLink:hover,#mobile .settingsLink:hover{
+	text-decoration: underline;
+}
+
+#settings:hover span,#mobile:hover span{
+	display: block;
+}
+
+@media screen and (max-width:780px) {
+	header h1{
+	font-size: 17px;
+	padding:0 10px; 
+	flex: 1;
+	}
+	.search{
+		flex: 1;
+	}
+
+	#search{
+		width: 200px;
+	}
+
+	#searchBox{
+		width: 200px;
+	}
+
+}
+
+
+@media screen and (max-width:600px) {
+	header h1{
+	display: none;
+	}
+	header img{
+		margin-right: 10px;
+	}
+	.search{
+		flex: 1;
+	}
+
+	#search{
+		width: 200px;
+	}
+
+	#searchBox{
+		width: 200px;
+	}
+
+	#settings{
+	display: none;
+	}
+
+	header .rightLinks:link{
+	display: none;
+	}
+
+	#mobile{
+		display: flex;
+		width:80px;
+	}
+}
+/*
+@media screen and (max-width:400px) {
+	header h1{
+	font-size: 15px;
+	padding:0 5px; 
+	flex: 0;
+	width: 150px;
+	}
+	.search{
+		flex: 1;
+	}
+
+	#search{
+		width: 150px;
+	}
+
+	#searchBox{
+		width: 150px;
+	}
+
+	#settings{
+	display: none;
+	}
+
+	header .rightLinks:link{
+	display: none;
+	}
+
+	#mobile{
+		display: flex;
+	}
+}*/
+
+
+
+
+
+
+

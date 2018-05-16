@@ -1,0 +1,210 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	background: linear-gradient(black, #4166a0);
+}
+
+.main{
+	position: absolute;
+	top: 50px;
+	z-index: 1;
+	bottom: 0;
+	flex: 1;
+	width: 100%;
+	color: white;
+		
+}
+
+.mainScroll{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	flex: 1;
+	overflow: scroll;
+	padding: 30px;
+	box-sizing: border-box;
+	background: linear-gradient(black, #4166a0);
+	min-height: 100%;
+}
+
+.settingsPageLinks:link{
+	width: 100%;
+	height: 80px;
+	line-height: 60px;		
+	background-color: lightslategrey;
+	border: 2px solid #b21000;
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	padding-left: 40px;
+}
+
+.settingsPageLinks:visited{
+	color: white;
+	border: 2px solid #b21000;
+}
+
+.settingsPageLinks:hover{
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+form{
+	flex-flow: column nowrap;
+	width: 600px;
+	background-color: #bfbfbf;
+	border: 2px solid #b21000;
+	border-top: none;
+	border-radius: 0 0 10px 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	color: white;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.regInput{
+	margin-top: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+
+.regInput span{
+	margin-left: 20px;
+}
+
+.email{
+	font-size: 25px;
+	margin: 0;
+}
+
+.warning{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	border: 2px solid darkred;
+	background-color: red;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.warning li{
+	padding: 5px 20px;
+	text-align: left;
+}
+
+.success{
+	display: block;
+	width: 100%;
+	height: 40px;
+	border: 2px solid darkgreen;
+	background-color: limegreen;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 10px 0;
+	text-align: center;
+}
+
+label{
+	display: inline-block;
+	width: 270px;
+	height: 30px;
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+input[type="email"],input[type="password"],.inputText,input[type="number"]{
+	width: 250px;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: white;
+	margin: 0;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	border: none;
+	color: #737373;
+	font-size: 17px;
+}
+input[type="number"]{
+	width:80px;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+
+select{
+	margin-left: 10px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+
+input[type="submit"]{
+	width: 100px;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: #002db3;
+	border: 1px solid #b21000;
+	margin: 0;
+	color: white;
+	font-size: 17px;
+	margin-top: 20px;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+#genInfoForm,#newEmailForm,#newPassForm{
+	display: none;
+}
+
+@media screen and (max-width: 500px) {
+	.regInput span{
+		margin: 0;
+	}
+	.regInput select{
+		margin: 0;	
+	}
+	input[type="number"]{
+		margin: 0;	
+		width:70px;
+	}
+}

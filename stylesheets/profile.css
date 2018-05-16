@@ -1,0 +1,608 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	flex: 1;
+	z-index: 0;
+}
+
+.main{
+	position: absolute;
+	top: 50px;
+	z-index: 1;
+	bottom: 0;
+	flex: 1;
+	width: 100%;
+	overflow: scroll;
+	color: white;
+	background: linear-gradient(black, #4166a0);
+}
+
+.mainScroll{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	flex: 1;
+}
+
+
+.headPic{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	min-height: 300px;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.headPic img{
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	border: 1px solid #b21000;
+}
+
+.headPic .headInfo{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 300px;
+	border-radius: 10px;
+	background-color: lightslategrey;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+.headInfo h2{
+	width: 100%;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.headInfo div{
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 5px;
+	box-sizing: border-box;
+	background-color: #bfbfbf;
+}
+
+.headInfo span{
+	width: 150px;
+	color: white;
+	font-weight: bold;
+}
+
+nav{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	background-color: lightslategrey;
+	text-align: center;
+	font-size: 22px;
+}
+
+nav a:link, nav button{
+	display: block;
+	width: 200px;
+	height: 100%;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+}
+
+
+nav a:visited{
+	color: white;
+}
+
+nav a:hover, nav button:hover{
+	background-color: #002db3;
+	opacity: 0.9;
+}
+
+nav a:link .highlight{
+	background-color: #002db3;
+}
+
+nav button{
+	background-color: #001a66;
+	border: none;
+	margin: 0;
+	font-size: 22px;
+	width: 300px;
+}
+
+nav button:hover{
+	cursor: pointer;
+}
+
+#profInput{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+
+#about,#friends,#vacancy,#notif,#editProfile{
+	display: none;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#vacancy{
+	display: none;
+	width: 70%;
+}
+
+#about{
+	display: flex;
+}
+
+.sec{
+	display: block;
+	width: 90%;
+	background-color: #bfbfbf;
+	margin: 0 20px;
+	margin-top: 40px;
+	border: 1px solid #b21000;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+
+
+.skill{
+	display: inline-block;
+	background-color: #252a33;
+	min-width: 200px;
+	padding: 5px 10px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin-right: 20px;
+	margin-top: 20px;
+	border-radius: 5px;
+	font-size: 22px;
+}
+
+h2{
+	margin: 0;
+}
+
+
+.aboutInfo{
+	background-color: #252a33;
+	margin-top: 20px;
+	padding: 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 22px;
+}
+
+.aboutInfo div{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 10px;
+	min-height: 50px; 
+}
+
+.aboutInfo .aboutInfoDesc{
+	min-width: 100%;
+	background-color: #252a33;
+	padding: 10px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.aboutInfo div span{ 
+	background-color: #252a33;
+	padding: 10px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+
+
+
+#friendReturn{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 80%;
+	background-color: #bfbfbf;
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 20px;
+}
+
+.friend{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #252a33;
+	border-radius: 5px;
+	width: 30%;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+.friend img{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	margin-right: 20px;
+}
+
+
+.friend a:link{
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
+}
+
+.friend a:visited{
+	color: white;
+}
+
+.friend a:hover{
+	color: white;
+	text-decoration: underline
+}
+
+
+/*NOTIFICATIONS*/
+.friendRequest{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	border: 1px solid #b21000;
+	background-color: #bfbfbf;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	font-size: 25px;
+	padding: 20px;
+
+}
+
+.friendRequest img{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	margin-right: 20px;
+}
+
+.friendRequest span{
+	margin-right: 20px;
+}
+.friendRequest a:link{
+	color: white;
+	text-decoration: none;
+}
+.friendRequest a:visited{
+	color: white;
+}
+.friendRequest a:hover{
+	text-decoration: underline;
+}
+
+.friendRequest button{
+	height: 40px;
+	width: 100px;
+	border: 1px solid #001a66;
+	background-color: #002db3;
+	box-sizing: border-box;
+	color: white;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.friendRequest button:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+
+.appLink{
+	margin:0 5px;
+}
+
+
+
+/*Edit Profile   bfbfbf*/
+form[name="ban"]{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-size: 22px;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #bfbfbf;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.ban{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+form[name="ban"] span{
+	margin: 0 20px;	
+}
+
+form[name="ban"] select{
+	margin: 0 5px;	
+}
+
+
+input[type="number"]{
+	width: 80px;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: darkgrey;
+	margin: 0;
+	border: none;
+	color: white;
+	font-size: 17px;
+}
+
+input[type="submit"]{
+	width: 200px;
+	height: 50px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: #002db3;
+	margin: 0;
+	border: none;
+	color: white;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.warning{
+	display: block;
+	width: 100%;
+	height: 40px;
+	border: 2px solid darkred;
+	background-color: red;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#editProfile .sec{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 60%;
+	background-color: lightslategrey;
+	padding: 30px;
+	padding-top: 20px;
+	border: 1px solid #b21000;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+#editProfile .skillSec{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;	
+	width: 100%;
+	font-size: 25px;
+}
+
+#editProfile .skillSec span{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #252a33;
+	margin: 10px;
+	padding: 10px;
+	width: 40%;
+}
+
+
+
+#editProfile .skillSec span label{
+	display: inline-block;
+	flex: 1;
+}
+
+#editProfile input[type="checkbox"]{
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+#editProfile textarea{
+	width: 100%;
+	height: 150px;
+	background-color: #bfbfbf;
+	padding: 10px;
+	color: white;
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+
+#editProfile img{
+	width: 300px;
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+
+
+
+#editProfile button,label[for="file"],input[type="submit"]{
+	width: 200px;
+	height: 50px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: #002db3;
+	margin: 0;
+	border: none;
+	color: white;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+
+#editProfile label[for="file"]{
+	line-height: 40px;
+	text-align: center;
+}
+
+#editProfile button:hover, label[for="file"]:hover,input[type="submit"]:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+
+
+
+#editProfile .sec .info{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	margin-top: 30px;
+	background-color: #bfbfbf;
+}
+
+ #editProfile .sec .info label{
+	margin-right: 30px;
+}
+
+#editProfile input[type="text"],input[type="number"]{
+	width: 250px;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: darkgrey;
+	margin: 0;
+	border: none;
+	color: white;
+	font-size: 17px;
+}
+#editProfile input[type="number"]{
+	width:80px;
+}
+
+#editProfile select{
+	margin-right: 15px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+	.headPic img{
+		margin: 20px 0;
+		width: 150px;
+		height: 150px;
+	}
+
+	.headPic .headInfo{
+		margin-bottom: 20px;
+	}
+
+	nav a:link, nav button{
+		overflow: hidden;
+		font-size: 15px;
+	}
+
+	.friend{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	#editProfile .skillSec span{
+		width: 100%;
+	}
+
+	#editProfile input[type="text"]{
+		width: 150px;
+	}
+	#editProfile input[type="number"]{
+		width: 70px;
+	}
+}
+
+
+
+
+
